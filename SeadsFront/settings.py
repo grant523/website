@@ -58,6 +58,14 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
+#Setting up basic authentication
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.BasicAuthentication',
+        'rest_framework.authentication.SessionAuthentication',
+    ),
+}
+
 ROOT_URLCONF = 'SeadsFront.urls'
 
 WSGI_APPLICATION = 'SeadsFront.wsgi.application'
