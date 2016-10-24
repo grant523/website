@@ -9,7 +9,7 @@ from seadssite import views as v
 admin.autodiscover()
 
 urlpatterns = [
-               url(r'^login/$', login),
+               url(r'^login/$', login, name='django.contrib.auth.views.login'),
                url(r'^logout/$', logout, {'next_page': '/'}),
                url(r'^admin/', include(admin.site.urls)),
                url(r'^accounts/password/reset/$', password_reset,
