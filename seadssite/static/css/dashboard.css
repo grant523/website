@@ -8,11 +8,19 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+#list-of-applications {
+  float: left;
+  clear: both;
+  background-color: red;
+}
+
+
 /* line 20, ../sass/dashboard.scss */
 #space-for-search-bar {
   margin-top: 50px;
   padding: 10px;
-  wdith: 300px;
+  width: 300px;
+  background-color: blue;
 }
 
 /* line 27, ../sass/dashboard.scss */
